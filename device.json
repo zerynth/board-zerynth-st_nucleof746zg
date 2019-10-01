@@ -1,0 +1,71 @@
+{
+    "name": "ST Nucleo F746ZG",
+    "target": "st_nucleof746zg",
+    "cc": "armgcc",
+    "classes": [
+        "stnucleof746zg.STNucleoF746ZG"
+    ],
+    "ram": 320,
+    "flash": 1024,
+    "family_type": "armcmx",
+    "family_name": "stm32f7",
+    "chip_model": "stm32f746",
+    "manual_reset": 1,
+    "preferred_baud": 115200,
+    "board_producer": "ST Microelectronics",
+    "chip_manifacturer": "STM",
+    "architecture": "cortex-m7",
+    "gccopts": {
+        "arch": [
+            "-mcpu=cortex-m7",
+            "-mthumb",
+            "-mfpu=fpv4-sp-d16",
+            "-mfloat-abi=softfp"
+        ],
+        "cflags": [
+            "-mcpu=cortex-m7",
+            "-mthumb",
+            "-O2",
+            "-fomit-frame-pointer",
+            "-falign-functions=16",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-fno-common",
+            "-Wall",
+            "-Wextra",
+            "-Wstrict-prototypes",
+            "-nostdlib",
+            "-std=c99"
+        ],
+        "defs": [
+            "STM32F746xx",
+            "VM_DEFAULT_THREAD_SIZE=1024"
+        ]
+    },
+    "relocator": "cortex-m",
+    "vm_chunk": 256,
+    "type": "board",
+    "virtualizable": "STNucleoF746ZG",
+    "jtag_target": "stm32f7x.cfg",
+    "jtag_capable": 2,
+    "jtag_class": "STNucleoF746ZG",
+    "jtag_chipid_command": "reset halt; mdw 0x1ff0f420; mdw 0x1ff0f424; mdw 0x1ff0f428",
+    "jtag_chipid_len": 3,
+    "jtag_chipid_prefix": "0x1ff0f",
+    "bytecode_offset": "0x8020000",
+    "vmstore_offset": "0x801FC00",
+    "preferred_burn_with_jtag": {
+        "probe": "stlink"
+    },
+    "uplink_reset": true,
+    "reset_time": 2000,
+    "has_alter_ego": false,
+    "connection": {
+        "baudrate": 115200,
+        "parity": "n",
+        "bytesize": 8,
+        "stopbits": 1,
+        "dsrdtr": false,
+        "rtscts": false
+    }
+}

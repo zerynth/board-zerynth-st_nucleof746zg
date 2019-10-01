@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.2.0",
+        "vhal.zerynth.armcmx_stm32f7": "r2.2.0"
+    },
+    "description": "Add support for ST Nucleo F746ZG",
+    "fullname": "board.zerynth.st_nucleof746zg",
+    "git_pointer": "zerynth://zerynth-boards/st_nucleof746zg",
+    "info": {
+        "board": "ST Nucleo F746ZG",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f746",
+        "family_type": "ARM Cortex M7"
+    },
+    "keywords": [
+        "board",
+        "nucleo",
+        "stm",
+        "f746zg"
+    ],
+    "repo": "official",
+    "title": "ST Nucleo F746ZG Support Package",
+    "version": "r2.2.0",
+    "whatsnew": " "
+}
